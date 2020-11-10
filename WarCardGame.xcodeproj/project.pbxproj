@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		312B3103255A814A0004BCC3 /* WarCardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B3102255A814A0004BCC3 /* WarCardGameTests.swift */; };
+		312B311B255AD4DF0004BCC3 /* WarCardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B311A255AD4DF0004BCC3 /* WarCardGameUITests.swift */; };
 		83678D5E221EF6A1003298C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83678D5D221EF6A1003298C6 /* AppDelegate.swift */; };
 		83678D60221EF6A1003298C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83678D5F221EF6A1003298C6 /* ViewController.swift */; };
 		83678D63221EF6A1003298C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83678D61221EF6A1003298C6 /* Main.storyboard */; };
@@ -23,6 +24,13 @@
 			remoteGlobalIDString = 83678D59221EF6A1003298C6;
 			remoteInfo = WarCardGame;
 		};
+		312B311D255AD4DF0004BCC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83678D52221EF6A1003298C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83678D59221EF6A1003298C6;
+			remoteInfo = WarCardGame;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,9 @@
 		312B3100255A814A0004BCC3 /* WarCardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarCardGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		312B3102255A814A0004BCC3 /* WarCardGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCardGameTests.swift; sourceTree = "<group>"; };
 		312B3104255A814A0004BCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312B3118255AD4DF0004BCC3 /* WarCardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarCardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		312B311A255AD4DF0004BCC3 /* WarCardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCardGameUITests.swift; sourceTree = "<group>"; };
+		312B311C255AD4DF0004BCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83678D5A221EF6A1003298C6 /* WarCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83678D5D221EF6A1003298C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83678D5F221EF6A1003298C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +52,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		312B30FD255A814A0004BCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		312B3115255AD4DF0004BCC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,11 +84,21 @@
 			path = WarCardGameTests;
 			sourceTree = "<group>";
 		};
+		312B3119255AD4DF0004BCC3 /* WarCardGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				312B311A255AD4DF0004BCC3 /* WarCardGameUITests.swift */,
+				312B311C255AD4DF0004BCC3 /* Info.plist */,
+			);
+			path = WarCardGameUITests;
+			sourceTree = "<group>";
+		};
 		83678D51221EF6A1003298C6 = {
 			isa = PBXGroup;
 			children = (
 				83678D5C221EF6A1003298C6 /* WarCardGame */,
 				312B3101255A814A0004BCC3 /* WarCardGameTests */,
+				312B3119255AD4DF0004BCC3 /* WarCardGameUITests */,
 				83678D5B221EF6A1003298C6 /* Products */,
 				312B30F8255A810C0004BCC3 /* WarCardGame copy-Info.plist */,
 			);
@@ -81,6 +109,7 @@
 			children = (
 				83678D5A221EF6A1003298C6 /* WarCardGame.app */,
 				312B3100255A814A0004BCC3 /* WarCardGameTests.xctest */,
+				312B3118255AD4DF0004BCC3 /* WarCardGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +148,24 @@
 			productReference = 312B3100255A814A0004BCC3 /* WarCardGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		312B3117255AD4DF0004BCC3 /* WarCardGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 312B311F255AD4E00004BCC3 /* Build configuration list for PBXNativeTarget "WarCardGameUITests" */;
+			buildPhases = (
+				312B3114255AD4DF0004BCC3 /* Sources */,
+				312B3115255AD4DF0004BCC3 /* Frameworks */,
+				312B3116255AD4DF0004BCC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				312B311E255AD4DF0004BCC3 /* PBXTargetDependency */,
+			);
+			name = WarCardGameUITests;
+			productName = WarCardGameUITests;
+			productReference = 312B3118255AD4DF0004BCC3 /* WarCardGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		83678D59221EF6A1003298C6 /* WarCardGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83678D6C221EF6A1003298C6 /* Build configuration list for PBXNativeTarget "WarCardGame" */;
@@ -144,9 +191,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Christopher Ching";
+				ORGANIZATIONNAME = "Biswajeet Chatterjee";
 				TargetAttributes = {
 					312B30FF255A814A0004BCC3 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 83678D59221EF6A1003298C6;
+					};
+					312B3117255AD4DF0004BCC3 = {
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 83678D59221EF6A1003298C6;
 					};
@@ -170,12 +221,20 @@
 			targets = (
 				83678D59221EF6A1003298C6 /* WarCardGame */,
 				312B30FF255A814A0004BCC3 /* WarCardGameTests */,
+				312B3117255AD4DF0004BCC3 /* WarCardGameUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		312B30FE255A814A0004BCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		312B3116255AD4DF0004BCC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,6 +262,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		312B3114255AD4DF0004BCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312B311B255AD4DF0004BCC3 /* WarCardGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83678D56221EF6A1003298C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +286,11 @@
 			isa = PBXTargetDependency;
 			target = 83678D59221EF6A1003298C6 /* WarCardGame */;
 			targetProxy = 312B3105255A814A0004BCC3 /* PBXContainerItemProxy */;
+		};
+		312B311E255AD4DF0004BCC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83678D59221EF6A1003298C6 /* WarCardGame */;
+			targetProxy = 312B311D255AD4DF0004BCC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -283,6 +355,48 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarCardGame.app/WarCardGame";
+			};
+			name = Release;
+		};
+		312B3120255AD4E00004BCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJ7P299SA4;
+				INFOPLIST_FILE = WarCardGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.biswajeetchatt.WarCardGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WarCardGame;
+			};
+			name = Debug;
+		};
+		312B3121255AD4E00004BCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJ7P299SA4;
+				INFOPLIST_FILE = WarCardGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.biswajeetchatt.WarCardGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WarCardGame;
 			};
 			name = Release;
 		};
@@ -450,6 +564,15 @@
 			buildConfigurations = (
 				312B3108255A814A0004BCC3 /* Debug */,
 				312B3109255A814A0004BCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		312B311F255AD4E00004BCC3 /* Build configuration list for PBXNativeTarget "WarCardGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				312B3120255AD4E00004BCC3 /* Debug */,
+				312B3121255AD4E00004BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

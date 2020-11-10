@@ -3,10 +3,12 @@
 //  WarCardGameTests
 //
 //  Created by Biswajeet Chatterjee on 10/11/20.
-//  Copyright © 2020 Christopher Ching. All rights reserved.
+//  Copyright © 2020 Biswajeet Chatterjee. All rights reserved.
 //
 
 import XCTest
+
+@testable import WarCardGame
 
 class WarCardGameTests: XCTestCase {
 
@@ -18,16 +20,20 @@ class WarCardGameTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testIsEvenSuccess(){
+        let obj = ViewController()
+        let val = 4
+        
+        XCTAssertTrue(obj.isEven(number: val))
+        
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testIsEvenFailure(){
+        let obj = ViewController()
+        let val = 3
+        
+        XCTAssertFalse(obj.isEven(number: val))
+        
     }
 
 }
