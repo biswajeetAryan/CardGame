@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  WarCardGame
 //
-//  Created by Christopher Ching on 2019-02-21.
-//  Copyright © 2019 Christopher Ching. All rights reserved.
+//  Created by Biswajeet Chatterjee on 2019-02-21.
+//  Copyright © 2019 Biswajeet Chatterjee. All rights reserved.
 //
 
 import UIKit
@@ -58,7 +58,13 @@ class ViewController: UIViewController {
         
     }
     
-    
+    func isEven(number: Int) -> Bool {
+        if number%2 == 0 {
+            return true
+        } else {
+            return false
+        }
+    }
     
     
     
