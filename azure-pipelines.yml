@@ -22,5 +22,7 @@ steps:
   inputs:
     testRunTitle: 'Test'
     actions: 'test'
+    configuration: 'Debug'
+    sdk: 'iphoneos'
     scheme: 'WarCardGameTests'
     packageApp: false
