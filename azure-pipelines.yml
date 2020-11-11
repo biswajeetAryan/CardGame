@@ -27,4 +27,4 @@ steps:
     scheme: 'WarCardGameTests'
     packageApp: false
     destinationPlatformOption: 'iOS'
-    destinationSimulators: 'iphonesimulator14.0'
+    destinationSimulators: 'iPhone 8 Plus,OS=14.0'
