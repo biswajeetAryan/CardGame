@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build'
-    configuration: 'Release'
+    actions: 'clean build test'
+    configuration: 'Debug'
     sdk: 'iphoneos'
     scheme: 'WarCardGame'
     packageApp: false
