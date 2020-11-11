@@ -19,10 +19,12 @@ steps:
     scheme: 'WarCardGame'
     packageApp: false
 - task: Xcode@5
-  name: "_Test"
+  name: "_Unit_Test"
   inputs:
     actions: 'test'
     configuration: 'Debug'
     sdk: 'iphoneos'
     scheme: 'WarCardGameTests'
     packageApp: false
+    destinationPlatformOption: 'iOS'
+    destinationSimulators: 'iphonesimulator13.7'
