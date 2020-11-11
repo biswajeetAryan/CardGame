@@ -12,8 +12,15 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'clean build test'
+    testRunTitle: 'Clean Build'
+    actions: 'clean build'
     configuration: 'Debug'
     sdk: 'iphoneos'
     scheme: 'WarCardGame'
+    packageApp: false
+- task: Xcode@5
+  inputs:
+    testRunTitle: 'Test'
+    actions: 'test'
+    scheme: 'WarCardGameTests'
     packageApp: false
