@@ -9,6 +9,12 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
+variables:
+- name: lintpath
+  value: '$(Agent.BuildDirectory)/build_$(Build.BuildId)_lintreport.html'
+- name: coveragepath
+  value: '$(Agent.BuildDirectory)/coverage/'
+
 steps:
 - task: Xcode@5
   displayName: "Clean Build"
@@ -35,3 +41,12 @@ steps:
     script: |
       brew install swiftlint
       gem install slather
+- task: CmdLine@2
+  displayName: "Run Swiftlint"
+  inputs:
+    script: 'swiftlint --reporter html > $(lintpath)'
+- task: PublishPipelineArtifact@1
+  displayName: "Publish Swiftlint artifact"
+  inputs:
+    targetPath: '$(lintpath)'
+    artifact: 'swiftlint_report'
