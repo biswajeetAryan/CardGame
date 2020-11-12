@@ -1,0 +1,9 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+xcodeproj: WarCardGame.xcodeproj
+scheme: YourXcodeSchemeName
+configuration: Debug
+source_directory: ./azure-pipelines2
+ignore:
+  - Pods/*
