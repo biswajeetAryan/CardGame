@@ -50,3 +50,12 @@ steps:
   inputs:
     targetPath: '$(lintpath)'
     artifact: 'swiftlint_report'
+- task: CmdLine@2
+  displayName: "Run slather"
+  inputs:
+    script: 'slather coverage -x --output-directory $(coveragepath)'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(coveragepath)/cobertura.xml'
+  condition: always()
