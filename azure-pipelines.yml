@@ -29,3 +29,9 @@ steps:
     destinationPlatformOption: 'iOS'
     destinationSimulators: 'iPhone 8 Plus,OS=14.0'
     publishJUnitResults: true
+- task: CmdLine@2
+  displayName: "Install Swiftlint and Slather"
+  inputs:
+    script: |
+      brew install swiftlint
+      gem install slather
