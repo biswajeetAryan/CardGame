@@ -11,7 +11,7 @@ pool:
 
 steps:
 - task: Xcode@5
-  name: "_Clean_Build"
+  displayName: "Clean Build"
   inputs:
     actions: 'clean build'
     configuration: 'Debug'
@@ -19,7 +19,7 @@ steps:
     scheme: 'WarCardGame'
     packageApp: false
 - task: Xcode@5
-  name: "_Unit_Test"
+  displayName: "Unit Test"
   inputs:
     actions: 'test'
     configuration: 'Debug'
@@ -28,3 +28,4 @@ steps:
     packageApp: false
     destinationPlatformOption: 'iOS'
     destinationSimulators: 'iPhone 8 Plus,OS=14.0'
+    publishJUnitResults: true
